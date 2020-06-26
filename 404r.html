@@ -1,0 +1,100 @@
+<html lang="hi-IN">
+<head>
+    <meta charset="utf-8">
+
+    <title>No Connection</title>
+
+    <!-- Stylesheets-->
+    <style type="text/css">
+ body{
+  background: #EFEFEF;
+}
+
+#cloud {
+  width: 300px;
+  height: 120px;
+  background:#0fffff;
+
+  background: -webkit-linear-gradient(-90deg,#bb1819 5%, #bb1819 100%);
+
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+
+  position: fixed;
+
+  margin: 110px auto;
+  opacity: .5;
+}
+
+#cloud:before, #cloud:after{
+  content: '';
+  position:absolute;
+  background: #bb1819;
+  z-index: -1;
+}
+
+#cloud:after{
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  left:50px;
+
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+
+#cloud:before{
+  width: 120px;
+  height: 120px;
+  top: -70px;
+  right: 50px;
+
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+}
+
+.shadow {
+  width: 300px;
+  position: absolute;
+  bottom: -10px;
+  background: black;
+  z-index: -1;
+
+  -webkit-box-shadow: 0 0 25px 8px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 0 25px 8px rgba(0,0,0,0.4);
+  box-shadow: 0 0 25px 8px rgba(0,0,0,0.4);
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+
+}
+
+h2 {
+  color: #FFF551;
+  font-size: 22x;
+  padding-top: 1px;
+  text-align: center;
+  margin: 5px auto;
+}
+
+h4 {
+  color: #fff;
+  font-size: 13px;
+  margin: 0 auto;
+  padding: 8px;
+  text-align: center;
+}
+
+ </style>
+
+<body>
+<div id="cloud"> <h2>NO Internet Connection :(</h2>
+    <h4><span style="color: #ffffff;">Please Connect Internet or Wifi <a style="color: #ffffff; </a> </span></h4>
+    <span class="shadow"></span></div>
+
+</body>
+</html>
